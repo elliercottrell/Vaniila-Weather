@@ -47,6 +47,18 @@ a:hover {
   border-radius: 2px;
   background: #aad9d8;
 }
+.search-button {
+  background: #f95959;
+  color: #ffffff;
+  border: 1px solid #f95959;
+  border-radius: 2px;
+  padding: 6px 12px;
+}
+.search-button:hover {
+  opacity: 60%;
+  transition: all 200ms ease-in-out;
+}
+
 .weather-temperature {
   text-align: right;
 }

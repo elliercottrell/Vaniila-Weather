@@ -45,9 +45,19 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
-let apiKey = "5da7b2dc058f07286fea39c4cee516a3";
-let city = "Ulaanbaatar";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "5da7b2dc058f07286fea39c4cee516a3";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-console.log(apiUrl);
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Ulaanbaatar");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
