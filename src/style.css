@@ -1,6 +1,51 @@
-h1 {
-  color: pink;
+body {
   font-family: "roboto mono";
   font-weight: lighter;
+}
+.weather-app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #f95959;
+  border-radius: 2px;
+  background: #aad9d8;
+}
+h1 {
+  color: #f95959;
+  background: #aad9d8;
+  font-weight: lighter;
+  font-size: 30px;
   text-align: center;
+  height: 40px;
+}
+.icon-and-temp {
+  text-align: right;
+  color: #f95959;
+}
+
+li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+small {
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  text-align: center;
+  color: lightslategray;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #f95959;
 }
