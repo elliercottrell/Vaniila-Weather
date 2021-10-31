@@ -58,12 +58,14 @@ a:hover {
 .weather-temperature strong {
   font-size: 50px;
   color: #f95959;
+  position: relative;
+  top: 13px;
 }
 .weather-temperature .units {
   color: #ffffff;
   position: relative;
   font-size: 16px;
-  top: -24px;
+  top: -11px;
 }
 .weather-temperature a {
   color: #ffffff;
