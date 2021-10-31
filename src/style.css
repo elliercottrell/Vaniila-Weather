@@ -1,11 +1,11 @@
 body {
   font-family: "roboto mono";
-  font-weight: lighter;
+  font-weight: 300;
 }
 h1 {
   color: #f95959;
   background: #aad9d8;
-  font-weight: lighter;
+  font-weight: 600;
   font-size: 35px;
   text-align: center;
   height: 40px;
@@ -69,6 +69,7 @@ small a:hover {
 }
 .weather-temperature strong {
   font-size: 50px;
+  font-weight: 500;
   color: #f95959;
   position: relative;
   top: 13px;
@@ -81,6 +82,7 @@ small a:hover {
 }
 .weather-temperature a {
   text-decoration: none;
+  font-weight: 500;
   color: #ffffff;
 }
 .weather-temperature a:hover {
