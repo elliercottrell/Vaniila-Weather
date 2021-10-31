@@ -30,11 +30,11 @@ small {
   font-family: "Courier New", Courier, monospace;
   color: lightslategray;
 }
-a {
+small a {
   color: #f95959;
   text-decoration: none;
 }
-a:hover {
+small a:hover {
   color: lightslategray;
 }
 .weather-app-wrapper {
@@ -80,8 +80,12 @@ a:hover {
   top: -11px;
 }
 .weather-temperature a {
+  text-decoration: none;
   color: #ffffff;
 }
 .weather-temperature a:hover {
+  text-decoration: underline;
+}
+.weather-temperature .active {
   color: #f95959;
 }
