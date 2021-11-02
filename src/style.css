@@ -91,3 +91,18 @@ small a:hover {
 .weather-temperature .active {
   color: #f95959;
 }
+
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+  color: #48484a;
+}
+.weather-forecast-date {
+  font-size: 14px;
+}
+.weather-forecast-temp {
+  font-size: 10px;
+}
+.weather-forecast-temp-max {
+  font-weight: 500;
+}
