@@ -21,6 +21,35 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class = "row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class = "col-2">
+                <div class = "weather-forecast-date">
+                Thu
+                </div>
+                <img src = "https://openweathermap.org/img/wn/03n@2x.png"
+                alt = "cloud" width="40";/>
+                <div class = "weather-forecast-temp">
+                  <span class= "weather-forecast-temp-max">
+                18°
+                </span> 
+                <span class= "weather-forecast-temp-min">
+                12°
+                </span>
+                </div>
+              </div>`;
+  });
+
+  forecastHTML = forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   let dateElement = document.querySelector("#date");
@@ -43,7 +72,7 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   feelsElement.innerHTML = `${Math.round(response.data.main.feels_like)}°`;
-  humidityElement.innerHTML = `${response.data.main.humidity} %`;
+  humidityElement.innerHTML = `${response.data.main.humidity}%`;
   windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
@@ -88,3 +117,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsuiusTemperature);
 
 search("Ulaanbaatar");
+displayForecast();
