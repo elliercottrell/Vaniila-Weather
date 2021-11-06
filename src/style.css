@@ -47,6 +47,9 @@ small a:hover {
   border-radius: 2px;
   background: #aad9d8;
 }
+.search-form {
+  margin: 0 auto;
+}
 .search-button {
   margin-right: 10px;
   background: #f95959;
