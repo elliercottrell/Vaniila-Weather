@@ -25,13 +25,13 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class = "row">`;
-  let days = ["Thu", "Fri", "Sat"];
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       ` <div class = "col-2">
                 <div class = "weather-forecast-date">
-                Thu
+                Day
                 </div>
                 <img src = "https://openweathermap.org/img/wn/03n@2x.png"
                 alt = "cloud" width="40";/>
