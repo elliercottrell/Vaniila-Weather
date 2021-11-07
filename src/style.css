@@ -69,6 +69,10 @@ small a:hover {
   padding: 6px 10px;
   margin-right: 10px;
 }
+#current-location-button:hover {
+  opacity: 60%;
+  transition: all 200ms ease-in-out;
+}
 .weather-temperature {
   text-align: right;
 }
@@ -87,19 +91,10 @@ small a:hover {
 .weather-temperature .units {
   color: #ffffff;
   position: relative;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
   top: -11px;
-}
-.weather-temperature a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #ffffff;
-}
-.weather-temperature a:hover {
-  text-decoration: underline;
-}
-.weather-temperature .active {
-  color: #f95959;
+  left: -5px;
 }
 
 .weather-forecast {
@@ -108,7 +103,7 @@ small a:hover {
   color: #48484a;
 }
 .weather-forecast-date {
-  font-size: 14px;
+  font-size: 12px;
 }
 .weather-forecast-temp {
   font-size: 10px;

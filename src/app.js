@@ -70,6 +70,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
+  console.log(response.data);
   let iconElement = document.querySelector("#icon");
   let dateElement = document.querySelector("#date");
   let temperatureElement = document.querySelector("#temperature");
