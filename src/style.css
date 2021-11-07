@@ -60,11 +60,12 @@ small a:hover {
 }
 .float-right {
   text-align: right;
-
-  padding: 0;
-  margin: 0 auto;
+  padding: 0px 10px;
+  margin: 0;
 }
 #current-location-button {
+  font-size: 12px;
+  line-height: 1.2;
   background: #f95959;
   color: #ffffff;
   border: 1px solid #f95959;
