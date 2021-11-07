@@ -106,8 +106,10 @@ small a:hover {
   font-size: 12px;
 }
 .weather-forecast-temp {
-  font-size: 10px;
+  font-size: 9px;
+  padding: 0px;
 }
 .weather-forecast-temp-max {
   font-weight: 500;
+  padding: 0px;
 }
