@@ -21,7 +21,8 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class = "row">`;
@@ -50,6 +51,13 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "5da7b2dc058f07286fea39c4cee516a3";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   let dateElement = document.querySelector("#date");
@@ -74,6 +82,8 @@ function displayTemperature(response) {
   feelsElement.innerHTML = `${Math.round(response.data.main.feels_like)}°`;
   humidityElement.innerHTML = `${response.data.main.humidity}%`;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+
+  getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -117,4 +127,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsuiusTemperature);
 
 search("Ulaanbaatar");
-displayForecast();
