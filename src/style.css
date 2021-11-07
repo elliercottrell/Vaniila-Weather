@@ -52,6 +52,7 @@ small a:hover {
   border: 1px solid #f95959;
   border-radius: 2px;
   padding: 6px 10px;
+  position: relative;
 }
 .search-button:hover {
   opacity: 60%;
@@ -66,6 +67,7 @@ small a:hover {
   border: 1px solid #f95959;
   border-radius: 2px;
   padding: 7px 10px;
+  position: relative;
 }
 #current-location-button:hover {
   opacity: 60%;
