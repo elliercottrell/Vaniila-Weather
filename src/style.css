@@ -59,13 +59,13 @@ small a:hover {
 }
 
 #current-location-button {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1;
   background: #f95959;
   color: #ffffff;
   border: 1px solid #f95959;
   border-radius: 2px;
-  padding: 6px 10px;
+  padding: 7px 10px;
 }
 #current-location-button:hover {
   opacity: 60%;
