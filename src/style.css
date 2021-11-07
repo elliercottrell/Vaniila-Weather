@@ -53,8 +53,10 @@ small a:hover {
   border-radius: 2px;
   padding: 6px 10px;
 }
-.search-button:hover {
-  opacity: 60%;
+.search-button:hover,
+#current-location-button:hover {
+  background: #aad9d8;
+  border: 1px solid #ffffff;
   transition: all 200ms ease-in-out;
 }
 
@@ -67,10 +69,7 @@ small a:hover {
   border-radius: 2px;
   padding: 7px 10px;
 }
-#current-location-button:hover {
-  opacity: 60%;
-  transition: all 200ms ease-in-out;
-}
+
 .weather-temperature {
   text-align: right;
 }
